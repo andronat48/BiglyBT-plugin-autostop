@@ -12,9 +12,7 @@ Released under the GPL
 
 The purpose of this plugin is to help with people whose ISPs are anal-retentive
 about upload bandwidth usage, like mine is.  Its purpose is to be a community-
-friendly implementation of an upload limiter.  It will not permit upload cutoff
-at less than a 1.0 share ratio, but other than that it will disable uploads for
-a few ratios that are equal to or greater than that.
+friendly implementation of an upload limiter.
 
 The settings are, I hope, more or less self-explanatory.  Feel free to comment on
 it.
@@ -43,3 +41,6 @@ it.
     
 - 2.0.5
 	- Fix for BiglyBT
+	
+- 2.0.5-patched
+    - Removed ratio constraint. -1.0 to 0.0 will stop torrents after downloading.

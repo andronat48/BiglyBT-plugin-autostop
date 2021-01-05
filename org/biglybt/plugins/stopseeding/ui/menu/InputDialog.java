@@ -154,7 +154,7 @@ public class InputDialog {
                     else {
                         try {
                             Float ratio = Float.parseFloat (text);
-                            if (ratio >= 1.0) {
+                            if (ratio >= -1.0) {
                                 result = true;
                             }
                             else {

@@ -84,7 +84,8 @@ public class AutoStopConfiguration {
 
     private StringListParameter  removalAction;
 
-    public AutoStopConfiguration(final AutoStopPlugin plugin) {
+    @SuppressWarnings("deprecation")
+	public AutoStopConfiguration(final AutoStopPlugin plugin) {
 
         BasicPluginConfigModel cfg = plugin.getPluginInterface ().getUIManager ().createBasicPluginConfigModel (
                 "plugins", ResourceConstants.PLUGIN_NAME);
@@ -209,7 +210,7 @@ public class AutoStopConfiguration {
      * @return
      */
     public String[] getDefaultRatioOptions () {
-        return new String[] { "Unlimited", "1.0", "1.5", "2.0", "5.0" };
+        return new String[] { "-1.0", "0.0", "Unlimited", "1.0", "1.5", "2.0", "5.0" };
     }
 
 }
